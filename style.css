@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray_500: hsl(0, 0%, 42%);
+    --Gray_950: hsl(0, 0%, 7%);
+    --font_figtree: "Figtree", serif;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Yellow);
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font_figtree);
+}
+.container{
+    background-color: var(--White);
+    width: 15%;
+    padding: 2%;
+    border-radius: 8px;
+    border: 2px solid var(--Gray_950);
+    box-shadow: 5px 5px var(--Gray_950);
+}
+#hero_picture{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 3%;
+}
+h3{
+    width: 30%;
+    background-color: var(--Yellow);
+    margin-bottom: 3%;
+}
+#date{
+    margin-bottom: 3%;
+}
+a{
+    text-decoration: none;
+    color: var(--Gray_950);
+}
+a:hover{
+    color: var(--Yellow);
+}
+h2{
+    margin-bottom: 3%;
+}
+#hero_parag{
+    margin-bottom: 5%;
+    color: var(--Gray_500);
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#wrapper_picture{
+    width: 15%;
+}
+#text{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 60%;
+    }
+    h3{
+        font-size: 14px;
+    }
+    #date{
+        font-size: 14px;
+    }
+    a{
+        font-size: 10px;
+    }
+    #hero_parag{
+        font-size: 10px;
+    }
+    #text{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container{
+        width: 20%;
+    }
+    h3{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 15%;
+    }
+    h3{
+        width: 35%;
+    }
+}
+@media screen and (min-width: 2560px){
+    .container{
+        width: 33%;
+    }
+    #hero_picture{
+        width: 100%;
+        border-radius: 10px;
+    }
+    h3{
+        width: 15%;
+        font-size: 28px;
+    }
+    #date{
+        font-size: 28px;
+    }
+    a{
+        font-size: 30px;
+    }
+    #hero_parag{
+        font-size: 28px;
+    }
+    #text{
+        font-size: 28px;
+    }
+}
